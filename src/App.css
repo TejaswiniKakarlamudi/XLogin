@@ -1,42 +1,91 @@
 .App {
   text-align: center;
+  color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  margin-bottom: 20px;
+  margin-left: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
 }
 
-.App-header {
-  background-image: url('./Assets/XLogindesktop.webp');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #282c34;
-  min-height: 100vh;
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 20px;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  text-align: left;
+  color: #333;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #cbb5d5;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #9b59b6;
+  outline: none;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #9b59b6;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #8e44ad;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#message {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  body {
+      padding: 10px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .login-container {
+      padding: 20px;
+      width: 100%;
+  }
+
+  input {
+      padding: 8px;
+      font-size: 14px;
+  }
+
+  button {
+      padding: 8px 12px;
+      font-size: 14px;
+  }
+
+  #message {
+      font-size: 16px;
   }
 }
